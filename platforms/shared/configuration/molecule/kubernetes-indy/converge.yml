@@ -63,7 +63,7 @@
           k8s:
             config_file: "/tmp/molecule/kind-default/kubeconfig"
             context: "kind"
-        git_url: "ssh://git@github.com/hyperledger-labs/blockchain-automation-framework.git"
+        git_url: "ssh://git@github.com/sillysachin/ocb.git"
         git_key: "test_rsa.pem"
         git_branch: "develop"
         git_path: "platforms/r3-corda/releases/test"

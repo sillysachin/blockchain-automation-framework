@@ -1,5 +1,5 @@
 # USAGE: 
-# docker build . -t ocb-build
+# docker build . -t baf-build
 # docker run -v $(pwd):/home/ocb/ baf-build
 
 FROM ubuntu:16.04
