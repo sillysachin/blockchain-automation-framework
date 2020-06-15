@@ -39,6 +39,7 @@ COPY ./reset.sh /home
 RUN chmod 755 /home/run.sh
 RUN chmod 755 /home/reset.sh
 ENV PATH=/root/bin:/root/.local/bin/:$PATH
+RUN ls -l /home 
 
 # The mounted repo should contain a build folder with the following files
 # 1) K8s config file as config
