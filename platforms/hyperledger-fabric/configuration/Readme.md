@@ -63,7 +63,7 @@ ansible-playbook reset-network.yaml -e "@./network.yaml"
 ```
 ansible-playbook add-organization.yaml -e "@./network.yaml" -e "add_new_org='true'"
 ```
-Follow steps in [README](https://github.com/hyperledger-labs/blockchain-automation-framework/docs/source/operations/adding_new_org_fabric.md).
+Follow steps in [README](https://github.com/hyperledger-labs/ocb/docs/source/operations/adding_new_org_fabric.md).
 
 (Above command assumes that network.yaml is present in current directory with org_status tag and new organization details).<br>
 

@@ -35,7 +35,7 @@ Prepare a network.yaml file for your demo or you can use this sample for [AWS](.
 Run Ansible Playbook by following these [steps](../../platforms/hyperledger-indy/configuration/README.md)
 Can be started also via Docker container:
 1. Go to root directory of this git repository.
-2. Run command: `docker run -it -v $(pwd):/home/blockchain-automation-framework/ --entrypoint bash hyperledgerlabs/baf-build`
+2. Run command: `docker run -it -v $(pwd):/home/ocb/ --entrypoint bash hyperledgerlabs/baf-build`
 3. When are you entered into Docker container console, use command:
 `./run.sh`
 ### Step 5
@@ -53,16 +53,16 @@ example of trustee:
           server:
             port: 8000
 ```
-- Run Ansible [playbook](./configuration/deploy-identity-app.yaml) with command: `ansible-playbook -i ./blockchain-automation-framework/platforms/shared/inventory/ansible_provisoners ./blockchain-automation-framework/examples/identity-app/configuration/deploy-identity-app.yaml -e "@./blockchain-automation-framework/build/network.yaml"`
+- Run Ansible [playbook](./configuration/deploy-identity-app.yaml) with command: `ansible-playbook -i ./ocb/platforms/shared/inventory/ansible_provisoners ./ocb/examples/identity-app/configuration/deploy-identity-app.yaml -e "@./ocb/build/network.yaml"`
 
 ### Step 6
 Agents for Faber University and Student Alice don't have Ansible roles created yet. These agents have to be run manually:
 - Be sure that you are in Docker container (BAF), if not, then enter via command: `docker exec -it <docker_container_name_or_id> bash`
-- Create environment variable for kubernetes config: `export KUBECONFIG=/home/blockchain-automation-framework/build/config`
+- Create environment variable for kubernetes config: `export KUBECONFIG=/home/ocb/build/config`
 - Fill all variables in `value.yaml` file in helm [chart of faber](./charts/faber)
-- Create Helm release for University Faber with command: `helm install --name faber /home/blockchain-automation-framework/examples/identity-app/charts/faber/`
+- Create Helm release for University Faber with command: `helm install --name faber /home/ocb/examples/identity-app/charts/faber/`
 - Fill all variables in `value.yaml` file in helm [chart of alice](./charts/alice)
-- Create Helm release for Student Alice with command: `helm install --name alice /home/blockchain-automation-framework/examples/identity-app/charts/alice/`
+- Create Helm release for Student Alice with command: `helm install --name alice /home/ocb/examples/identity-app/charts/alice/`
 
 ### Step 7
 Identity App is running and agents API via Swagger are available on IP address of your cluster with ports which you defined for your agents in `value.yaml` file.

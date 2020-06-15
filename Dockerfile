@@ -1,6 +1,6 @@
 # USAGE: 
-# docker build . -t baf-build
-# docker run -v $(pwd):/home/blockchain-automation-framework/ baf-build
+# docker build . -t ocb-build
+# docker run -v $(pwd):/home/ocb/ baf-build
 
 FROM ubuntu:16.04
 
@@ -46,7 +46,7 @@ ENV PATH=/root/bin:/root/.local/bin/:$PATH
 # 3) Private key file which has write-access to the git repo
 
 #path to mount the repo
-VOLUME /home/blockchain-automation-framework/
+VOLUME /home/ocb/
 
 
 CMD ["/home/run.sh"]

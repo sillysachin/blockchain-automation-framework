@@ -82,11 +82,11 @@ network:
       # Git Repo details which will be used by GitOps/Flux.
       # Do not check-in git_access_token
       gitops:
-        git_ssh: "ssh://git@github.com/<username>/blockchain-automation-framework.git"         # Gitops ssh url for flux value files 
+        git_ssh: "ssh://git@github.com/<username>/ocb.git"         # Gitops ssh url for flux value files 
         branch: "develop"           # Git branch where release is being made
         release_dir: "platforms/quorum/releases/dev" # Relative Path in the Git repo for flux sync per environment. 
         chart_source: "platforms/quorum/charts"     # Relative Path where the Helm charts are stored in Git repo
-        git_push_url: "github.com/<username>/blockchain-automation-framework.git"   # Gitops https URL for git push 
+        git_push_url: "github.com/<username>/ocb.git"   # Gitops https URL for git push 
         username: "git_username"          # Git Service user who has rights to check-in in all branches
         password: "git_access_token"          # Git Server user password
         email: "git_email"                # Email to use in git config
@@ -151,11 +151,11 @@ network:
       # Git Repo details which will be used by GitOps/Flux.
       # Do not check-in git_access_token
       gitops:
-        git_ssh: "ssh://git@github.com/<username>/blockchain-automation-framework.git"         # Gitops ssh url for flux value files 
+        git_ssh: "ssh://git@github.com/<username>/ocb.git"         # Gitops ssh url for flux value files 
         branch: "develop"           # Git branch where release is being made
         release_dir: "platforms/quorum/releases/dev" # Relative Path in the Git repo for flux sync per environment. 
         chart_source: "platforms/quorum/charts"     # Relative Path where the Helm charts are stored in Git repo
-        git_push_url: "github.com/<username>/blockchain-automation-framework.git"   # Gitops https URL for git push 
+        git_push_url: "github.com/<username>/ocb.git"   # Gitops https URL for git push 
         username: "git_username"          # Git Service user who has rights to check-in in all branches
         password: "git_access_token"          # Git Server user password
         email: "git_email"                # Email to use in git config
@@ -225,11 +225,11 @@ network:
       # Git Repo details which will be used by GitOps/Flux.
       # Do not check-in git_access_token
       gitops:
-        git_ssh: "ssh://git@github.com/<username>/blockchain-automation-framework.git"         # Gitops ssh url for flux value files 
+        git_ssh: "ssh://git@github.com/<username>/ocb.git"         # Gitops ssh url for flux value files 
         branch: "develop"           # Git branch where release is being made
         release_dir: "platforms/quorum/releases/dev" # Relative Path in the Git repo for flux sync per environment. 
         chart_source: "platforms/quorum/charts"     # Relative Path where the Helm charts are stored in Git repo
-        git_push_url: "github.com/<username>/blockchain-automation-framework.git"   # Gitops https URL for git push 
+        git_push_url: "github.com/<username>/ocb.git"   # Gitops https URL for git push 
         username: "git_username"          # Git Service user who has rights to check-in in all branches
         password: "git_access_token"          # Git Server user password
         email: "git_email"                # Email to use in git config
@@ -290,11 +290,11 @@ network:
       # Git Repo details which will be used by GitOps/Flux.
       # Do not check-in git_access_token
       gitops:
-        git_ssh: "ssh://git@github.com/<username>/blockchain-automation-framework.git"         # Gitops ssh url for flux value files 
+        git_ssh: "ssh://git@github.com/<username>/ocb.git"         # Gitops ssh url for flux value files 
         branch: "develop"           # Git branch where release is being made
         release_dir: "platforms/quorum/releases/dev" # Relative Path in the Git repo for flux sync per environment. 
         chart_source: "platforms/quorum/charts"     # Relative Path where the Helm charts are stored in Git repo
-        git_push_url: "github.com/<username>/blockchain-automation-framework.git"   # Gitops https URL for git push 
+        git_push_url: "github.com/<username>/ocb.git"   # Gitops https URL for git push 
         username: "git_username"          # Git Service user who has rights to check-in in all branches
         password: "git_access_token"          # Git Server user password
         email: "git_email"                # Email to use in git config
